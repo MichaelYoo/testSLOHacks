@@ -14,6 +14,18 @@
     <image:image>
       <image:loc>http://memes.com/images/devices.svg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>http://memes.com/images/create.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://memes.com/images/heart.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://memes.com/images/gear.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://memes.com/images/untitled-2.gif</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://memes.com/about.html</loc>
