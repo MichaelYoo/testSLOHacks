@@ -440,9 +440,11 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 
 
 		<form id="mc-form" class="form-style-6 helvetica">
+          <p> Name: </p>
 					<input class="fieldname" id="first_name" name="FNAME" type="text" placeholder="Name"/>
 					<input class="fieldlastname" id="last_name" name="LNAME" type="text" placeholder="Last Name"/>
-					<input id="mc-email" type="email" placeholder="Email">
+          <p> Email: </p>
+          <input id="mc-email" type="email" placeholder="Email">
 					<button type="submit">SUBMIT</button>
 					<label for="mc-email" class="resultadoajax"></label>
 		</form>
@@ -453,6 +455,17 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       src: url(fonts/ONEDAY.ttf);
     }
 		.resultadoajax {padding:10px; color:#0071BC;}
+    .form-style-6 p{
+      width:15%;
+      font-family: ONEDAY, helvetica;
+      font-size: 150%;
+      color: #75CEDC;
+      text-shadow: 0 0 50px #75CEDC;
+      margin-top: 2%;
+      margin-bottom: 8%;
+      margin-right: 0%;
+      float: left;
+    }
 		.form-style-6{
 			/*font: 95% Arial, Helvetica, sans-serif;*/
 			margin: 10px auto;
@@ -491,13 +504,15 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px;
-      width: 100%;
+      width: 60%;
       background: #fff;
-      margin-bottom: 4%;
+      margin-bottom: 10%;
       border: 1px solid #ccc;
       box-shadow: 0 0 20px #FFFFFF;
       padding: 2%;
       padding-left: 4% !important;
+      margin-right:15%;
+      margin-left: 0%;
       color: #555;
       font-family: ONEDAY, helvetica;
 
@@ -527,12 +542,13 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 		.form-style-6 input[type="submit"],
 		.form-style-6 button,
 		.form-style-6 input[type="button"]{
-      font-size: 100%;
+      text-align: center !important;
+      font-size: 50;
       color: #F9DD00;
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
-      width: 60%;
+      width: 30%;
       text-shadow: 0 0 50px #F9DD00 !important;
       box-shadow: 0 0 20px #75CEDC;
       padding: 1%;
@@ -545,6 +561,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       -moz-border-radius: 25px;
       border-radius: 25px;
       font-family: ONEDAY, helvetica;
+      margin-left: 30%;
 		}
 		.form-style-6 input[type="submit"]:hover,
 		.form-style-6 input[type="button"]:hover{
