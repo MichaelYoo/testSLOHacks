@@ -448,6 +448,11 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 		</form>
 
 		<style>
+    @font-face {
+      font-family: "ONEDAY";
+      src:url(fonts/ONEDAY.ttf);
+      src:url(fonts/ONEDAY.otf);
+    }
 		.resultadoajax {padding:10px; color:#0071BC;}
 		.form-style-6{
 			/*font: 95% Arial, Helvetica, sans-serif;*/
@@ -494,7 +499,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       padding: 2%;
       padding-left: 4% !important;
       color: #555;
-      font-family: ONEDAY, helvetica;
+      font-family: ONEDAY, helvetica !important;
       font-size: 250%;
 			/*font: 95% Arial, Helvetica, sans-serif;*/
 		}
@@ -534,7 +539,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       -webkit-border-radius: 25px;
       -moz-border-radius: 25px;
       border-radius: 25px;
-      font-family: ONEDAY, helvetica;
+      font-family: ONEDAY, helvetica !important;
 		}
 		.form-style-6 input[type="submit"]:hover,
 		.form-style-6 input[type="button"]:hover{
