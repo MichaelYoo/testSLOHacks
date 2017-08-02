@@ -18,7 +18,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
   <title>SLO Hacks</title>
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=4192472223"/>
-  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=4157996415"/>
+  <link rel="stylesheet" type="text/css" href="css/master_a-master.css?crc=314424848"/>
   <link rel="stylesheet" type="text/css" href="css/index.css?crc=12904854" id="pagesheet"/>
   <!-- IE-only CSS -->
   <!--[if lt IE 9]>
@@ -443,15 +443,11 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 					<input class="fieldname" id="first_name" name="FNAME" type="text" placeholder="Name"/>
 					<input class="fieldlastname" id="last_name" name="LNAME" type="text" placeholder="Last Name"/>
 					<input id="mc-email" type="email" placeholder="Email">
-					<button type="submit">Submit</button>
+					<button type="submit" href="thanks!.html">Submit</button>
 					<label for="mc-email" class="resultadoajax"></label>
 		</form>
 
 		<style>
-    @font-face {
-      font-family: ONEDAY;
-      src: url(fonts/ONEDAY.ttf);
-    }
 		.resultadoajax {padding:10px; color:#0071BC;}
 		.form-style-6{
 			/*font: 95% Arial, Helvetica, sans-serif;*/
@@ -1740,6 +1736,7 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 								var form = $(elem);
 								var email = form.find('input[type=email]');
 								var label = form.find('label[for=' + email.attr('id') + ']');
+                var newUrl = "michaelyoo.github.io/testSLOHacks/thanks!.html";
 
 								var settings = $.extend({
 									'url': form.attr('action'),
@@ -1758,6 +1755,7 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 											msg = 'We have sent you a confirmation email';
 											label.removeClass('error').addClass('valid');
 											email.removeClass('error').addClass('valid');
+                      document.location.href = newUrl;
 										} else {
 											email.removeClass('valid').addClass('error');
 											label.removeClass('valid').addClass('error');
