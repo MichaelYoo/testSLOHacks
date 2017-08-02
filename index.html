@@ -453,7 +453,8 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       src:url(fonts/ONEDAY.ttf);
       src:url(fonts/ONEDAY.otf);
     }
-		.resultadoajax {padding:10px; color:#0071BC;}
+		.resultadoajax {padding:10px; color:#ff0000;}
+
 		.form-style-6{
 			/*font: 95% Arial, Helvetica, sans-serif;*/
 			margin: 10px auto;
@@ -500,7 +501,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
       padding-left: 4% !important;
       color: #555;
       font-family: ONEDAY, helvetica !important;
-      font-size: 250%;
+      font-size: 200%;
 			/*font: 95% Arial, Helvetica, sans-serif;*/
 		}
 		.form-style-6 input[type="text"]:focus,
@@ -514,7 +515,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 		.form-style-6 textarea:focus,
 		.form-style-6 select:focus
 		{
-			box-shadow: 0 0 5px #75CEDC;
+			box-shadow: 0 0 50px #FFFFFF;
 			padding: 2%;
 			border: 1px solid #75CEDC;
 		}
@@ -1763,6 +1764,7 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 										} else {
 											email.removeClass('valid').addClass('error');
 											label.removeClass('valid').addClass('error');
+
 											var index = -1;
 											try {
 												var parts = resp.msg.split(' - ', 2);
