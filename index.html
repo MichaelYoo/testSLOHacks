@@ -482,7 +482,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 					<input class="fieldlastname" id="last_name" name="LNAME" type="text" placeholder="Last Name"/>
 					<input id="mc-email" type="email" placeholder="Email">
 					<button type="submit">Submit</button>
-					<!--<label for="mc-email" class="resultadoajax"></label>-->
+				<!--	<label for="mc-email" class="resultadoajax"></label> -->
 		</form>
 
     <style>
@@ -651,7 +651,6 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
             .brushscriptmt { font-family: "Brush Script MT",cursive!important; }
 
     </style>
-
 
 
 
@@ -1883,7 +1882,7 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 							}
 						};
 
-						$.fn.ajaxChimp = function (options) {
+            $.fn.ajaxChimp = function (options) {
 							$(this).each(function(i, elem) {
 								var form = $(elem);
 								var email = form.find('input[type=email]');
@@ -1910,6 +1909,8 @@ Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
 										} else {
 											email.removeClass('valid').addClass('error');
 											label.removeClass('valid').addClass('error');
+                      document.getElementById("first_name").style.boxShadow = "0px 0px 40px #ff0000";
+                      document.getElementById("mc-email").style.boxShadow = "0px 0px 40px #ff0000";
 											var index = -1;
 											try {
 												var parts = resp.msg.split(' - ', 2);
